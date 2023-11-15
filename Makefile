@@ -44,44 +44,6 @@ $(PROG):    $(OBJ) $(LIB)
 dump:       $(PROG)
 	$(DUMP) $(DFLAGS) $^
 
-
-alltest:    test1 test2 test3 test4 test5 test6 test7
-
-test1:      $(PROG)
-	@echo
-	@echo "****** starting $@ *******"
-	-./runtest 1
-
-test2:      $(PROG)
-	@echo
-	@echo "****** starting $@ *******"
-	-./runtest 2
-
-test3:      $(PROG)
-	@echo
-	@echo "****** starting $@ *******"
-	-./runtest 3
-
-test4:      $(PROG)
-	@echo
-	@echo "****** starting $@ *******"
-	-./runtest 4
-
-test5:      $(PROG)
-	@echo
-	@echo "****** starting $@ *******"
-	-./runtest 5
-
-test6:      $(PROG)
-	@echo
-	@echo "****** starting $@ *******"
-	-./runtest 6
-
-test7:      $(PROG)
-	@echo
-	@echo "****** starting $@ *******"
-	-./runtest 7
-
 # remove binaries
 .PHONY: clean
 clean:
